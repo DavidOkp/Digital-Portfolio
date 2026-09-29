@@ -13,7 +13,7 @@
     <header>
         <div class="flex justify-around items-center h-18 bg-gray-50 border-b border-gray-100 shadow-xs">
             <div>
-                <img src=" class="w-14 h-12 rounded-full" alt="">
+                <img src="" class="w-14 h-12 rounded-full" alt="logo">
             </div>
             <ul class="flex gap-3 transition-all text-sm font-poppins">
                 <li class="hover:text-purple-700">
@@ -32,15 +32,15 @@
         </div>
     </header>
 
-    <section class="h-[90vh] flex">
-        <div class="flex items-center justify-around w-full p-20">
-            <div class="w-[25%] shadow flex items-center justify-center h-[75%] rounded-full">
-                <img src="./assets/images/profile.jpeg" class="w-100 h-full rounded-full object-cover" alt="hero-image">
+    <section class="lg:h-[90vh] flex justify-center overflow-hidden">
+        <div class=" lg:flex items-center justify-around w-full p-5 lg:p-20">
+            <div class="w-80 lg:w-90 h-90 lg:h-90 flex items-center justify-center p- lg:p-0">
+                <img src="./assets/images/profile.jpeg" class=" w-60 h-60 lg:w-100 lg:h-full rounded-full object-cover shadow hero-image">
             </div>
-            <div class="w-[60%] space-y-5 font-poppins">
-                <h1 class="text-5xl font-bold">Hello, I'm David Okpanachi</h1>
+            <div class="lg:w-[60%] space-y-2 lg:space-y-5 font-poppins text-center lg:text-start">
+                <h1 class="text-3xl lg:text-5xl font-bold py-4 lg:py-0 ">Hello, I'm David Okpanachi</h1>
                 <p class="text-lg text-black/75">I am a passionate full-stack developer with a strong background in building modern, scalable web applications. Lets collaborate and bring your ideas to life.</p>
-                <span class="flex gap-4">
+                <span class="flex gap-4 items-center lg:items-start justify-center lg:justify-start">
                     <i class="bg-gray-200/50 p-1 rounded-lg">
                         <img src="./assets/images/linkedin-brands-solid-full.svg" class="w-6 h-6 rounded-full" alt="">
                     </i>
@@ -55,14 +55,14 @@
         </div>
     </section>
 
-    <section class="pl-32" id="experience">
-        <h1 class="text-5xl font-bold font-poppins">Work Experience</h1>
-        <div class="space-y-10 pl-10">
-                <div>
+    <section class="pl-32 pt-28" id="experience">
+        <h1 class="text-5xl font-bold font-poppins pb-10">Work Experience</h1>
+        <div class="pl-6 space-y-10">
+                <div class="">
                     <p class="text-2xl font-poppins">Senior Full Stack Developer @ Tech Corp</p>
                     <p class="text-lg text-gray-400 font-poppins">Jan 2020 - Present</p>
-                    <h1 class="text-xl font-poppins space-y-5">Key Responsibilities:</h1>
-                    <ul class="">
+                    <h1 class="text-xl font-poppins pt-4">Key Responsibilities:</h1>
+                    <ul class="pl-5">
                         <li class="text-gray-400 text-sm list-disc font-poppins">Developed front-end applications using React and Next.js.</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Developed front-end applications using React and Next.js.</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Led a team of developers to create scalable web applications.</li>
@@ -74,8 +74,8 @@
                 <div>
                     <p class="text-2xl font-poppins">Full Stack Developer @ Web Solutions</p>
                     <p class="text-lg text-gray-400 font-poppins">Jun 2017 - Dec 2019</p>
-                    <h1 class="text-xl  font-poppins">Key Responsibilities:</h1>
-                    <ul>
+                    <h1 class="text-xl font-poppins pt-4">Key Responsibilities:</h1>
+                    <ul class="pl-5">
                         <li class="text-gray-400 text-sm list-disc font-poppins">Designed and developed web applications using JavaScript and React</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Built and maintained server-side APIs with Node.js and Express.</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Collaborated with cross-functional teams to deliver high-quality products.</li>
@@ -85,5 +85,117 @@
                 </div>
         </div>
     </section>
+
+    <section class="pl-32 mt-36" id="Project">
+        <h1 class="text-5xl font-bold font-poppins pb-10">My Projects</h1>
+        <div>
+            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
+                <img class="w-xs h-44 rounded" src="./assets/images/tracker.jpeg" alt="tracker">
+                <div class="flex flex-col">
+                    <h1 class="font-poppins text-2xl font-semibold">Makers Tracker</h1>
+                    <div class="flex space-x-2">
+                        <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100">Typescript</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">Next.js</div>
+                        <div class="rounded-2xl flex justify-center w-24 font-semibold text-sm bg-gray-100">TailwindCSS</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">MySQL</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="pt-5 text-base text-gray-500">A project goal tracking tool for professionals. It let's you create project, assign goals and generate analytics to track progress</p>
+                        <div class=" flex pt-5 space-x-2">
+                            <button class="justify-center items-center space-x-2 flex text-sm rounded-lg w-30 h-8 bg-purple-500 border-b border-gray-100 shadow-sm">
+                                <img class="w-3 h-3" src="./assets/images/globe.png" alt="globe">
+                                <p class="text-white">Live Demo</p>
+                            </button>
+                            <button class="justify-center items-center space-x-2 flex border text-sm rounded-lg w-40 h-8 bg-gray-50/10 border-b border-gray-100 shadow-sm">
+                                <img class="w-4 h-6" src="./assets/images/github-brands-solid-full.svg" alt="git">
+                                <p>Open Repository</p>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
+                <img class="w-xs h-44 rounded" src="./assets/images/pricing_page.jpeg" alt="pricing">
+                <div class="flex flex-col">
+                    <h1 class="font-poppins text-2xl font-semibold">Pricing bees</h1>
+                    <div class="flex space-x-2">
+                        <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100">Typescript</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">Next.js</div>
+                        <div class="rounded-2xl flex justify-center w-24 font-semibold text-sm bg-gray-100">Shadcn/ui</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">Convex</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="pt-5 text-base text-gray-500">A no-code pricing page builder. Build professional-looking pricing pages, customize looks, and get detailed analytics to optimize your pricing strategy.</p>
+                        <div class=" flex pt-5 space-x-2">
+                            <button class="justify-center items-center space-x-2 flex text-sm rounded-lg w-30 h-8 bg-purple-500 border-b border-gray-100 shadow-sm">
+                                <img class="w-3 h-3" src="./assets/images/globe.png" alt="globe">
+                                <p class="text-white">Live Demo</p>
+                            </button>
+                            <button class="justify-center items-center space-x-2 flex border text-sm rounded-lg w-40 h-8 bg-gray-50/10 border-b border-gray-100 shadow-sm">
+                                <img class="w-4 h-6" src="./assets/images/github-brands-solid-full.svg" alt="git">
+                                <p>Open Repository</p>
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
+                <img class="w-xs h-44 rounded" src="./assets/images/indie.jpeg" alt="indie">
+                <div class="flex flex-col">
+                    <h1 class="font-poppins text-2xl font-semibold">Indie Hustles</h1>
+                    <div class="flex space-x-2">
+                        <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100 font-poppins">Typescript</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100 font-poppins">Next.js</div>
+                        <div class="rounded-2xl flex justify-center w-24 font-semibold text-sm bg-gray-100 font-poppins">TailwindCSS</div>
+                        <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100 font-poppins">Airtable</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="pt-5 text-base text-gray-500 font-poppins">A listing site for Indie hackers to promote their products</p>
+                        <div class=" flex pt-5 space-x-2">
+                            <button class="justify-center items-center space-x-2 flex text-sm rounded-lg w-30 h-8 bg-purple-500 border-b border-gray-100 shadow-sm">
+                                <img class="w-3 h-3" src="./assets/images/globe.png" alt="globe">
+                                <p class="text-white font-poppins">Live Demo</p>
+                            </button>
+                            <button class="justify-center items-center space-x-2 flex border text-sm rounded-lg w-40 h-8 bg-gray-50/10 border-b border-gray-100 shadow-sm">
+                                <img class="w-4 h-6" src="./assets/images/github-brands-solid-full.svg" alt="git">
+                                <p>Open Repository</p>
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pl-32 pt-50" id="experience">
+        <h1 class="text-5xl font-bold font-poppins pb-10">Education</h1>
+        <div class="pl-6 space-y-10">
+                <div>
+                    <p class="text-2xl font-poppins">Full Stack Web Development with React</p>
+                    <p class="text-lg font-poppins">Coursera</p>
+                    <h1 class="text-xl text-gray-400 font-poppins">Sep 2013 - May 2017</h1>
+                    <p class="text-gray-400 text-sm font-poppins pt-5">Completed a Coursera specialization that focused on building full-stack web applications using React, Node.js, Express, and MongoDB. Learned best practices for designing and implementing responsive, scalable, and secure web applications.</p>
+                </div>      
+                
+                <div>
+                    <p class="text-2xl font-poppins">Bachelor of Science in Computer Science</p>
+                    <p class="text-lg font-poppins">University of California, Berkeley</p>
+                    <h1 class="text-xl text-gray-400 font-poppins">Sep 2013 - May 2017</h1>
+                    <p class="text-gray-400 text-sm font-poppins pt-5">Completed a comprehensive curriculum in computer science, including courses in data structures, algorithms, software engineering, and artificial intelligence. Worked on several projects, including a web application for managing student organizations and a mobile app for tracking fitness activities.</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="pl-32 pt-48" id="testimonial">
+        <h1 class="text-5xl font-bold font-poppins pb-10">Testimonials</h1>
+        <div class="flex space-x-8">
+            <div class="pl-2 pt-5 flex flex-col mt-8 border h-44 w-[470px] rounded-xl border-b border-gray-200 shadow-xs"></div>
+            <div class="pl-2 pt-5 flex flex-col mt-8 border h-44 w-[470px] rounded-xl border-b border-gray-200 shadow-xs"></div>
+        </div>
+    </section>
 </body>
+
+<footer class="border h-14 mt-48 border-gray-200 border-r-white flex justify-center items-center">All rights reserved byLogging Studio • Distributed byThemeWagon</footer>
 </html>
