@@ -12,9 +12,9 @@
 <body>
     <header>
         <div class="flex justify-around items-center h-18 bg-gray-50 border-b border-gray-100 shadow-xs">
-            <div>
+            <!-- <div>
                 <img src="" class="w-14 h-12 rounded-full" alt="logo">
-            </div>
+            </div> -->
             <ul class="flex gap-3 transition-all text-sm font-poppins">
                 <li class="hover:text-purple-700">
                     <a href="#">Experience</a>
@@ -32,15 +32,15 @@
         </div>
     </header>
 
-    <section class="lg:h-[90vh] flex justify-center overflow-hidden">
-        <div class=" lg:flex items-center justify-around w-full p-5 lg:p-20">
-            <div class="w-80 lg:w-90 h-90 lg:h-90 flex items-center justify-center p- lg:p-0">
-                <img src="./assets/images/profile.jpeg" class=" w-60 h-60 lg:w-100 lg:h-full rounded-full object-cover shadow hero-image">
+    <section class="pt-16 lg:h-[90vh] flex justify-center overflow-hidden">
+        <div class="lg:flex items-center justify-around w-full p-5 lg:p-20">
+            <div class="w-[345px] lg:w-90 h-64 lg:h-90 flex items-center justify-center pl-[50px] lg:pl-0 lg">
+                <img class="w-60 h-60 lg:w-100 lg:h-full rounded-full object-cover shadow " src="./assets/images/profile.jpeg" alt="hero-image">
             </div>
             <div class="lg:w-[60%] space-y-2 lg:space-y-5 font-poppins text-center lg:text-start">
                 <h1 class="text-3xl lg:text-5xl font-bold py-4 lg:py-0 ">Hello, I'm David Okpanachi</h1>
                 <p class="text-lg text-black/75">I am a passionate full-stack developer with a strong background in building modern, scalable web applications. Lets collaborate and bring your ideas to life.</p>
-                <span class="flex gap-4 items-center lg:items-start justify-center lg:justify-start">
+                <span class="lg:pt-0 pt-2 flex gap-4 items-center lg:items-start justify-center lg:justify-start">
                     <i class="bg-gray-200/50 p-1 rounded-lg">
                         <img src="./assets/images/linkedin-brands-solid-full.svg" class="w-6 h-6 rounded-full" alt="">
                     </i>
@@ -55,12 +55,12 @@
         </div>
     </section>
 
-    <section class="pl-32 pt-28" id="experience">
-        <h1 class="text-5xl font-bold font-poppins pb-10">Work Experience</h1>
+    <section class="lg:mt-0 mt-20 pl-6 lg:pl-32 lg:pt-30 lg:p-0 p-6" id="experience">
+        <h1 class="text-4xl lg:text-5xl font-bold font-poppins pb-10">Work Experience</h1>
         <div class="pl-6 space-y-10">
-                <div class="">
-                    <p class="text-2xl font-poppins">Senior Full Stack Developer @ Tech Corp</p>
-                    <p class="text-lg text-gray-400 font-poppins">Jan 2020 - Present</p>
+                <div>
+                    <p class="text-2xl lg:text-2xl font-poppins">Senior Full Stack Developer @ Tech Corp</p>
+                    <p class="text-lg lg:text-lg text-gray-400 font-poppins">Jan 2020 - Present</p>
                     <h1 class="text-xl font-poppins pt-4">Key Responsibilities:</h1>
                     <ul class="pl-5">
                         <li class="text-gray-400 text-sm list-disc font-poppins">Developed front-end applications using React and Next.js.</li>
@@ -72,10 +72,10 @@
                 </div>      
                 
                 <div>
-                    <p class="text-2xl font-poppins">Full Stack Developer @ Web Solutions</p>
-                    <p class="text-lg text-gray-400 font-poppins">Jun 2017 - Dec 2019</p>
+                    <p class="text-2xl lg:text-2xl font-poppins">Full Stack Developer @ Web Solutions</p>
+                    <p class="text-lg lg:text-lg text-gray-400 font-poppins">Jun 2017 - Dec 2019</p>
                     <h1 class="text-xl font-poppins pt-4">Key Responsibilities:</h1>
-                    <ul class="pl-5">
+                    <ul class="pl-3 lg:pl-5">
                         <li class="text-gray-400 text-sm list-disc font-poppins">Designed and developed web applications using JavaScript and React</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Built and maintained server-side APIs with Node.js and Express.</li>
                         <li class="text-gray-400 text-sm list-disc font-poppins">Collaborated with cross-functional teams to deliver high-quality products.</li>
@@ -86,14 +86,14 @@
         </div>
     </section>
 
-    <section class="pl-32 mt-36" id="Project">
-        <h1 class="text-5xl font-bold font-poppins pb-10">My Projects</h1>
+    <section class="mt-20 lg:mt-40 pl-6 lg:pl-32" id="Project"> 
+        <h1 class="text-3xl lg:text-5xl font-bold font-poppins pb-7 lg:pb-10">My Projects</h1>
         <div>
-            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
-                <img class="w-xs h-44 rounded" src="./assets/images/tracker.jpeg" alt="tracker">
-                <div class="flex flex-col">
+            <div class="pl-2 pt-2 lg:pt-5 flex lg:flex-row flex-col space-x-10 mt-8 border h-[475px] lg:h-56 lg:w-10/12 w-11/12 rounded-xl border-b border-gray-200 shadow-xs">
+                <img class=" lg:pl-0 w-xs h-44 rounded-md lg:rounded lg:pt-0" src="./assets/images/tracker.jpeg" alt="tracker">
+                <div class="pt-10 lg:p-0 p-4 lg:pt-0 flex flex-col">
                     <h1 class="font-poppins text-2xl font-semibold">Makers Tracker</h1>
-                    <div class="flex space-x-2">
+                    <div class="flex lg:flex-row space-x-2">
                         <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100">Typescript</div>
                         <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">Next.js</div>
                         <div class="rounded-2xl flex justify-center w-24 font-semibold text-sm bg-gray-100">TailwindCSS</div>
@@ -115,11 +115,11 @@
                 </div> 
             </div>
 
-            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
+            <div class="pl-2 pt-2 lg:pt-5 flex lg:flex-row flex-col space-x-10 mt-8 border h-[498px] lg:h-56 lg:w-10/12 w-11/12 rounded-xl border-b border-gray-200 shadow-xs">
                 <img class="w-xs h-44 rounded" src="./assets/images/pricing_page.jpeg" alt="pricing">
-                <div class="flex flex-col">
+                <div class="pt-10 lg:p-0 p-4 lg:pt-0 flex flex-col">
                     <h1 class="font-poppins text-2xl font-semibold">Pricing bees</h1>
-                    <div class="flex space-x-2">
+                    <div class="flex lg:flex-row space-x-2">
                         <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100">Typescript</div>
                         <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100">Next.js</div>
                         <div class="rounded-2xl flex justify-center w-24 font-semibold text-sm bg-gray-100">Shadcn/ui</div>
@@ -141,10 +141,10 @@
                 </div>
             </div>
 
-            <div class="pl-2 pt-5 flex space-x-10 mt-8 border h-56 w-10/12 rounded-xl border-b border-gray-200 shadow-xs">
+            <div class="lg:pt-5 lg:p-2 p-5 flex lg:flex-row flex-col space-x-10 mt-8 border h-[460px] lg:h-56 lg:w-10/12 w-11/12 rounded-xl border-b border-gray-200 shadow-xs">
                 <img class="w-xs h-44 rounded" src="./assets/images/indie.jpeg" alt="indie">
                 <div class="flex flex-col">
-                    <h1 class="font-poppins text-2xl font-semibold">Indie Hustles</h1>
+                    <h1 class="font-poppins text-2xl font-semibold lg:pt-0 pt-10">Indie Hustles</h1>
                     <div class="flex space-x-2">
                         <div class="rounded-2xl flex justify-center w-20 h-6 font-semibold text-sm bg-gray-100 font-poppins">Typescript</div>
                         <div class="rounded-2xl flex justify-center w-16 font-semibold text-sm bg-gray-100 font-poppins">Next.js</div>
@@ -169,33 +169,46 @@
         </div>
     </section>
 
-    <section class="pl-32 pt-50" id="experience">
-        <h1 class="text-5xl font-bold font-poppins pb-10">Education</h1>
+    <section class="lg:mt-0 mt-20 pl-6 lg:pl-32 lg:pt-30 lg:p-18 p-6" id="experience">
+        <h1 class="text-3xl lg:text-5xl font-bold font-poppins pb-10">Education</h1>
         <div class="pl-6 space-y-10">
                 <div>
-                    <p class="text-2xl font-poppins">Full Stack Web Development with React</p>
-                    <p class="text-lg font-poppins">Coursera</p>
+                    <p class="text-[25px] lg:text-2xl font-poppins">Full Stack Web Development with React</p>
+                    <p class="text-lg lg:text-lg font-poppins">Coursera</p>
                     <h1 class="text-xl text-gray-400 font-poppins">Sep 2013 - May 2017</h1>
                     <p class="text-gray-400 text-sm font-poppins pt-5">Completed a Coursera specialization that focused on building full-stack web applications using React, Node.js, Express, and MongoDB. Learned best practices for designing and implementing responsive, scalable, and secure web applications.</p>
                 </div>      
                 
                 <div>
-                    <p class="text-2xl font-poppins">Bachelor of Science in Computer Science</p>
-                    <p class="text-lg font-poppins">University of California, Berkeley</p>
+                    <p class="text-[25px] lg:text-2xl font-poppins">Bachelor of Science in Computer Science</p>
+                    <p class="text-lg lg:text-lg font-poppins">University of California, Berkeley</p>
                     <h1 class="text-xl text-gray-400 font-poppins">Sep 2013 - May 2017</h1>
                     <p class="text-gray-400 text-sm font-poppins pt-5">Completed a comprehensive curriculum in computer science, including courses in data structures, algorithms, software engineering, and artificial intelligence. Worked on several projects, including a web application for managing student organizations and a mobile app for tracking fitness activities.</p>
                 </div>
         </div>
     </section>
 
-    <section class="pl-32 pt-48" id="testimonial">
-        <h1 class="text-5xl font-bold font-poppins pb-10">Testimonials</h1>
-        <div class="flex space-x-8">
-            <div class="pl-2 pt-5 flex flex-col mt-8 border h-44 w-[470px] rounded-xl border-b border-gray-200 shadow-xs"></div>
-            <div class="pl-2 pt-5 flex flex-col mt-8 border h-44 w-[470px] rounded-xl border-b border-gray-200 shadow-xs"></div>
+    <section class="lg:mt-0 mt-20 pl-6 lg:pl-32 lg:pt-30 lg:p-0 p-6" id="testimonial">
+        <h1 class="text-4xl lg:text-5xl font-bold font-poppins pb-10">Testimonials</h1>
+        <div class="lg:flex-row flex-col flex space-x-8 lg:pr-18">
+            <div class="p-5 pt-5 flex flex-col mt-8 border h-50 lg:w-[600px] w-[340px] tracking-tight rounded-xl border-b border-gray-200 shadow-xs">
+                <p class="text-base font-poppins font-medium">“John is a fantastic developer who consistently delivers high-quality work. His ability to solve complex problems is impressive...”</p>
+                <p class="pt-3 text-lg font-poppins font-bold">Jane Smith</p>
+                <p class="text-gray-400">Project Manager @ Tech Solutions Inc.</p>
+            </div>
+            <div class="pl-5 pt-5 flex flex-col mt-8 border h-50 lg:w-[600px] w-[340px] tracking-tight rounded-xl border-b border-gray-200 shadow-xs">
+                <p class="text-base font-poppins font-medium">“John is a highly skilled developer who brings a lot of value to our projects. His expertise in full stack development is top-notch...”</p>
+                <p class="pt-3 text-lg font-poppins font-bold">Mike Johnson</p>
+                <p class="text-gray-400">CEO @ Web Innovators LLC</p>
+            </div>
         </div>
     </section>
 </body>
 
-<footer class="border h-14 mt-48 border-gray-200 border-r-white flex justify-center items-center">All rights reserved byLogging Studio • Distributed byThemeWagon</footer>
+<footer class="border h-14 mt-48 border-gray-200 border-r-white flex lg:flex-row flex-col justify-center items-center tracking-tight lg:p-0 p-6">
+    <p>
+        All rights reserved by Logging Studio •
+    </p>
+    <p>Distributed by ThemeWagon</p>
+</footer>
 </html>
